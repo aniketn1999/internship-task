@@ -8,9 +8,13 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "REACT_APP_BACKEND=true PUBLIC_URL='/sing-app-react' node scripts/build.js",
+    "start": "node scripts/start.js",
+   "start:backend": "REACT_APP_BACKEND=true node scripts/start.js",
+    "test": "node scripts/test.js"
+
   },
   "dependencies": {
     "axios": "^1.6.7",
