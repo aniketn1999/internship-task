@@ -64,7 +64,7 @@ const CustomerDetailsForm = () => {
 
                             {/* Customer Details Form */}
                             <form onSubmit={handleSubmit}>
-                                <h2 className="mt-5">Customer Details Form</h2>
+                                <h2 className="mt-5">Book Your Ticket</h2>
                                 <div className="mb-3">
                                     <label htmlFor="name" className="form-label">Name</label>
                                     <input
@@ -106,9 +106,8 @@ const CustomerDetailsForm = () => {
                                         required
                                     />
 
-
                                     {/* Submit Button */}
-                                    <button type="submit" className="btn btn-primary mt-3">Submit</button>
+                                    <button type="submit" className="btn btn-primary mt-3">Book Now</button>
                                 </div>
                             </form>
                         </div>
